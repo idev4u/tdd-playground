@@ -10,10 +10,25 @@ import Foundation
 @testable import helloSwiftTDD
 
 class FakeURLSession: URLSessionProtocol {
+    var nextDataTask = FakeURLSessionDataTask()
+    var nextData: NSData?
+    var nextResponse: URLResponse?
+    var nextError: NSError?
+    
     private (set) var lastURL: NSURL?
     
-    func dataTaskWithURL(url: NSURL, complitionHandler: DataTaskResult) ->URLSessionDataTask {
+    func dataTaskWithURL(url: NSURL, complitionHandler: DataTaskResult) ->URLSessionDataTaskProtocol {
         lastURL = url
-        return URLSessionDataTask()
+        complitionHandler(nextData, nextResponse, nextError)
+        return nextDataTask
+    }
+      
+}
+
+class FakeURLSessionDataTask: URLSessionDataTaskProtocol {
+    private (set) var resumeWasCalled = false
+    
+    func resume() {
+        resumeWasCalled = true
     }
 }

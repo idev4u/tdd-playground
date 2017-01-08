@@ -19,7 +19,15 @@ class HTTPClient {
     }
     
     func get(url: NSURL, completion: HTTPResult) {
-        let task = session.dataTaskWithURL(url: url) { (_, _, _) -> Void in }
-//        task.resume()
+        let task = session.dataTaskWithURL(url: url) { (data, response, error) -> Void in
+            if let _ = error {
+                completion(nil, error)
+            } else if let response = response as? HTTPURLResponse, 200...299 ~= response.statusCode {
+                completion(data, nil)
+            } else {
+                completion(nil, error)
+            }
+        }
+        task.resume()
     }
 }

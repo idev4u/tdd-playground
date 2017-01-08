@@ -26,5 +26,35 @@ class TestHttpClient: XCTestCase {
     
         XCTAssert(session.lastURL === url)
     }
+    
+    func test_GET_StartsTheRequest() {
+        let dataTask = FakeURLSessionDataTask()
+        session.nextDataTask = dataTask
+        
+        client.get(url: NSURL()) { (_, _) -> Void in }
+        
+        XCTAssert(dataTask.resumeWasCalled)
+    }
+    
+    // Test Data
+    func test_GET_data() {
+        
+        
+        let url = NSURL(string: "https://console.ng.bluemix.net")!
+        let expectedData = "{event: 'cool keynote'}".data(using: String.Encoding.utf8) as NSData?
+        session.nextData = expectedData
 
+        var data: NSData?
+        session.nextResponse = HTTPURLResponse(url: url as URL, statusCode: 200, httpVersion: nil, headerFields: nil)
+        
+        // simple test fake test Facade
+        client.get(url: url) { (receivedData, _) -> Void in
+            data = receivedData
+
+        }
+
+        XCTAssertNotNil(data)
+        XCTAssertEqual(data, expectedData)
+
+    }
 }
