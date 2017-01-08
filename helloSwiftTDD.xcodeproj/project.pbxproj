@@ -11,6 +11,15 @@
 		94A4BB941E2002D600BE1AA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A4BB931E2002D600BE1AA3 /* Assets.xcassets */; };
 		94A4BB971E2002D600BE1AA3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A4BB951E2002D600BE1AA3 /* MainMenu.xib */; };
 		94A4BBA21E2002D600BE1AA3 /* helloSwiftTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBA11E2002D600BE1AA3 /* helloSwiftTDDTests.swift */; };
+		94A4BBAD1E20037300BE1AA3 /* SimpleHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBAC1E20037300BE1AA3 /* SimpleHello.swift */; };
+		94A4BBB41E2009EF00BE1AA3 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBB31E2009EF00BE1AA3 /* Mouse.swift */; };
+		94A4BBB61E200ACF00BE1AA3 /* AnimalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBAE1E20044400BE1AA3 /* AnimalTest.swift */; };
+		94A4BBB71E200ADB00BE1AA3 /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBB01E20056900BE1AA3 /* Duck.swift */; };
+		94A4BBB91E200C8300BE1AA3 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBB81E200C8300BE1AA3 /* Animal.swift */; };
+		94A4BBBC1E22682F00BE1AA3 /* URLSessionProtol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBBB1E22682F00BE1AA3 /* URLSessionProtol.swift */; };
+		94A4BBBE1E22695000BE1AA3 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBBD1E22695000BE1AA3 /* HttpClient.swift */; };
+		94A4BBC11E226D2100BE1AA3 /* FakeURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBC01E226D2100BE1AA3 /* FakeURLSession.swift */; };
+		94A4BBC31E227E8200BE1AA3 /* TestHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBC21E227E8200BE1AA3 /* TestHttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +41,15 @@
 		94A4BB9D1E2002D600BE1AA3 /* helloSwiftTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloSwiftTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A4BBA11E2002D600BE1AA3 /* helloSwiftTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloSwiftTDDTests.swift; sourceTree = "<group>"; };
 		94A4BBA31E2002D600BE1AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94A4BBAC1E20037300BE1AA3 /* SimpleHello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleHello.swift; sourceTree = "<group>"; };
+		94A4BBAE1E20044400BE1AA3 /* AnimalTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalTest.swift; sourceTree = "<group>"; };
+		94A4BBB01E20056900BE1AA3 /* Duck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Duck.swift; path = helloSwiftTDDTests/Duck.swift; sourceTree = SOURCE_ROOT; };
+		94A4BBB31E2009EF00BE1AA3 /* Mouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
+		94A4BBB81E200C8300BE1AA3 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		94A4BBBB1E22682F00BE1AA3 /* URLSessionProtol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtol.swift; sourceTree = "<group>"; };
+		94A4BBBD1E22695000BE1AA3 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		94A4BBC01E226D2100BE1AA3 /* FakeURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeURLSession.swift; sourceTree = "<group>"; };
+		94A4BBC21E227E8200BE1AA3 /* TestHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +91,9 @@
 		94A4BB901E2002D600BE1AA3 /* helloSwiftTDD */ = {
 			isa = PBXGroup;
 			children = (
+				94A4BBBA1E22680000BE1AA3 /* netwok_facade */,
+				94A4BBB21E20059000BE1AA3 /* protocol */,
+				94A4BBAC1E20037300BE1AA3 /* SimpleHello.swift */,
 				94A4BB911E2002D600BE1AA3 /* AppDelegate.swift */,
 				94A4BB931E2002D600BE1AA3 /* Assets.xcassets */,
 				94A4BB951E2002D600BE1AA3 /* MainMenu.xib */,
@@ -84,10 +105,40 @@
 		94A4BBA01E2002D600BE1AA3 /* helloSwiftTDDTests */ = {
 			isa = PBXGroup;
 			children = (
+				94A4BBBF1E226CF100BE1AA3 /* test_utils */,
 				94A4BBA11E2002D600BE1AA3 /* helloSwiftTDDTests.swift */,
+				94A4BBAE1E20044400BE1AA3 /* AnimalTest.swift */,
 				94A4BBA31E2002D600BE1AA3 /* Info.plist */,
+				94A4BBC21E227E8200BE1AA3 /* TestHttpClient.swift */,
 			);
 			path = helloSwiftTDDTests;
+			sourceTree = "<group>";
+		};
+		94A4BBB21E20059000BE1AA3 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				94A4BBB01E20056900BE1AA3 /* Duck.swift */,
+				94A4BBB31E2009EF00BE1AA3 /* Mouse.swift */,
+				94A4BBB81E200C8300BE1AA3 /* Animal.swift */,
+			);
+			name = protocol;
+			sourceTree = "<group>";
+		};
+		94A4BBBA1E22680000BE1AA3 /* netwok_facade */ = {
+			isa = PBXGroup;
+			children = (
+				94A4BBBB1E22682F00BE1AA3 /* URLSessionProtol.swift */,
+				94A4BBBD1E22695000BE1AA3 /* HttpClient.swift */,
+			);
+			name = netwok_facade;
+			sourceTree = "<group>";
+		};
+		94A4BBBF1E226CF100BE1AA3 /* test_utils */ = {
+			isa = PBXGroup;
+			children = (
+				94A4BBC01E226D2100BE1AA3 /* FakeURLSession.swift */,
+			);
+			name = test_utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A4BBB71E200ADB00BE1AA3 /* Duck.swift in Sources */,
 				94A4BB921E2002D600BE1AA3 /* AppDelegate.swift in Sources */,
+				94A4BBB41E2009EF00BE1AA3 /* Mouse.swift in Sources */,
+				94A4BBAD1E20037300BE1AA3 /* SimpleHello.swift in Sources */,
+				94A4BBBE1E22695000BE1AA3 /* HttpClient.swift in Sources */,
+				94A4BBBC1E22682F00BE1AA3 /* URLSessionProtol.swift in Sources */,
+				94A4BBB91E200C8300BE1AA3 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A4BBA21E2002D600BE1AA3 /* helloSwiftTDDTests.swift in Sources */,
+				94A4BBB61E200ACF00BE1AA3 /* AnimalTest.swift in Sources */,
+				94A4BBC31E227E8200BE1AA3 /* TestHttpClient.swift in Sources */,
+				94A4BBC11E226D2100BE1AA3 /* FakeURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
