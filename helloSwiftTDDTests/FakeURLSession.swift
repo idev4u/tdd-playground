@@ -17,9 +17,9 @@ class FakeURLSession: URLSessionProtocol {
     
     private (set) var lastURL: NSURL?
     
-    func dataTaskWithURL(url: NSURL, complitionHandler: DataTaskResult) ->URLSessionDataTaskProtocol {
+    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult) ->URLSessionDataTaskProtocol {
         lastURL = url
-        complitionHandler(nextData, nextResponse, nextError)
+        completionHandler(nextData, nextResponse, nextError)
         return nextDataTask
     }
       

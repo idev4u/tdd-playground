@@ -11,17 +11,18 @@ import XCTest
 
 class TestHttpClient: XCTestCase {
     
-    var client: HTTPClient!
+    var client: HTTPAPIController!
     let session = FakeURLSession()
     
     override func setUp() {
         super.setUp()
-        client = HTTPClient(session: session)
+        client = HTTPAPIController(session: session)
     }
     
     func test_fake_connection() {
         let url = NSURL(string: "https://console.ng.bluemix.net")!
-    
+        
+        //second arg is closure funny syntax
         client.get(url: url) { (_, _) -> Void in }
     
         XCTAssert(session.lastURL === url)
@@ -39,22 +40,22 @@ class TestHttpClient: XCTestCase {
     // Test Data
     func test_GET_data() {
         
-        
+        //test setup
         let url = NSURL(string: "https://console.ng.bluemix.net")!
         let expectedData = "{event: 'cool keynote'}".data(using: String.Encoding.utf8) as NSData?
         session.nextData = expectedData
-
-        var data: NSData?
         session.nextResponse = HTTPURLResponse(url: url as URL, statusCode: 200, httpVersion: nil, headerFields: nil)
-        
-        // simple test fake test Facade
+
+        // how to us it
+        var data: NSData?
         client.get(url: url) { (receivedData, _) -> Void in
             data = receivedData
-
         }
-
-        XCTAssertNotNil(data)
-        XCTAssertEqual(data, expectedData)
+        
+        //Control your requirements
+        XCTAssert(session.lastURL === url, "the url should be exact the same like in the get func!")
+        XCTAssertNotNil(data, "Data should have to be not nil!")
+        XCTAssertEqual(data, expectedData, "Get should provide the fake data.")
 
     }
 }
