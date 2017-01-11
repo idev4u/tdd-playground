@@ -7,11 +7,11 @@
 //
 
 import Foundation
-
+//
 class SimpleHello {
-    
+//    
     private let audience = "Developers"
-    
+//    
     func message() -> String {
         return "Hello \(audience) outhere!"
     }

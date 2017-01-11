@@ -14,17 +14,17 @@ class AnimalTest: XCTestCase {
     
     func test2DifferentAnimals() {
         
-        let donald = Duck()
+        let donald: Animal = Duck()
         let duckFeature = donald.feature()
         XCTAssertEqual(duckFeature, "quak")
         
-        XCTAssertTrue(donald is Animal, "Expect that Donald is an Animal")
+//        XCTAssertTrue(donald is Animal, "Expect that Donald is an Animal")
         
-        let micky = Mouse()
+        let micky: Animal = Mouse()
         let mouseFeature = micky.feature()
         XCTAssertEqual(mouseFeature, "piep")
         
-        XCTAssertTrue(micky is Animal, "Expect that Micky is an Animal")
+//        XCTAssertTrue(micky is Animal, "Expect that Micky is an Animal")
         
         
     }

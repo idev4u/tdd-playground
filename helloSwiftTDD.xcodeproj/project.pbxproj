@@ -11,16 +11,16 @@
 		94A4BB941E2002D600BE1AA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A4BB931E2002D600BE1AA3 /* Assets.xcassets */; };
 		94A4BB971E2002D600BE1AA3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A4BB951E2002D600BE1AA3 /* MainMenu.xib */; };
 		94A4BBA21E2002D600BE1AA3 /* helloSwiftTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBA11E2002D600BE1AA3 /* helloSwiftTDDTests.swift */; };
-		94A4BBAD1E20037300BE1AA3 /* SimpleHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBAC1E20037300BE1AA3 /* SimpleHello.swift */; };
-		94A4BBB41E2009EF00BE1AA3 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBB31E2009EF00BE1AA3 /* Mouse.swift */; };
 		94A4BBB61E200ACF00BE1AA3 /* AnimalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBAE1E20044400BE1AA3 /* AnimalTest.swift */; };
-		94A4BBB71E200ADB00BE1AA3 /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBB01E20056900BE1AA3 /* Duck.swift */; };
-		94A4BBB91E200C8300BE1AA3 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBB81E200C8300BE1AA3 /* Animal.swift */; };
 		94A4BBBC1E22682F00BE1AA3 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBBB1E22682F00BE1AA3 /* URLSessionProtocol.swift */; };
 		94A4BBBE1E22695000BE1AA3 /* HttpAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBBD1E22695000BE1AA3 /* HttpAPIController.swift */; };
 		94A4BBC11E226D2100BE1AA3 /* FakeURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBC01E226D2100BE1AA3 /* FakeURLSession.swift */; };
 		94A4BBC31E227E8200BE1AA3 /* TestHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBC21E227E8200BE1AA3 /* TestHttpClient.swift */; };
 		94A4BBC51E22880E00BE1AA3 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBC41E22880E00BE1AA3 /* URLSessionDataTaskProtocol.swift */; };
+		94EDE8D91E255E1A009D989C /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8D51E255E1A009D989C /* Animal.swift */; };
+		94EDE8DA1E255E1A009D989C /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8D61E255E1A009D989C /* Duck.swift */; };
+		94EDE8DB1E255E1A009D989C /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8D71E255E1A009D989C /* Mouse.swift */; };
+		94EDE8DC1E255E1A009D989C /* SimpleHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8D81E255E1A009D989C /* SimpleHello.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,16 +42,16 @@
 		94A4BB9D1E2002D600BE1AA3 /* helloSwiftTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloSwiftTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A4BBA11E2002D600BE1AA3 /* helloSwiftTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloSwiftTDDTests.swift; sourceTree = "<group>"; };
 		94A4BBA31E2002D600BE1AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94A4BBAC1E20037300BE1AA3 /* SimpleHello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleHello.swift; sourceTree = "<group>"; };
 		94A4BBAE1E20044400BE1AA3 /* AnimalTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalTest.swift; sourceTree = "<group>"; };
-		94A4BBB01E20056900BE1AA3 /* Duck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Duck.swift; path = helloSwiftTDDTests/Duck.swift; sourceTree = SOURCE_ROOT; };
-		94A4BBB31E2009EF00BE1AA3 /* Mouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
-		94A4BBB81E200C8300BE1AA3 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		94A4BBBB1E22682F00BE1AA3 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		94A4BBBD1E22695000BE1AA3 /* HttpAPIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpAPIController.swift; sourceTree = "<group>"; };
 		94A4BBC01E226D2100BE1AA3 /* FakeURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeURLSession.swift; sourceTree = "<group>"; };
 		94A4BBC21E227E8200BE1AA3 /* TestHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHttpClient.swift; sourceTree = "<group>"; };
 		94A4BBC41E22880E00BE1AA3 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		94EDE8D51E255E1A009D989C /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animal.swift; path = ../backup/Animal.swift; sourceTree = "<group>"; };
+		94EDE8D61E255E1A009D989C /* Duck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Duck.swift; path = ../backup/Duck.swift; sourceTree = "<group>"; };
+		94EDE8D71E255E1A009D989C /* Mouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mouse.swift; path = ../backup/Mouse.swift; sourceTree = "<group>"; };
+		94EDE8D81E255E1A009D989C /* SimpleHello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleHello.swift; path = ../backup/SimpleHello.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +95,8 @@
 			children = (
 				94A4BBBA1E22680000BE1AA3 /* netwok_facade */,
 				94A4BBB21E20059000BE1AA3 /* protocol */,
-				94A4BBAC1E20037300BE1AA3 /* SimpleHello.swift */,
 				94A4BB911E2002D600BE1AA3 /* AppDelegate.swift */,
+				94EDE8D81E255E1A009D989C /* SimpleHello.swift */,
 				94A4BB931E2002D600BE1AA3 /* Assets.xcassets */,
 				94A4BB951E2002D600BE1AA3 /* MainMenu.xib */,
 				94A4BB981E2002D600BE1AA3 /* Info.plist */,
@@ -119,9 +119,9 @@
 		94A4BBB21E20059000BE1AA3 /* protocol */ = {
 			isa = PBXGroup;
 			children = (
-				94A4BBB01E20056900BE1AA3 /* Duck.swift */,
-				94A4BBB31E2009EF00BE1AA3 /* Mouse.swift */,
-				94A4BBB81E200C8300BE1AA3 /* Animal.swift */,
+				94EDE8D51E255E1A009D989C /* Animal.swift */,
+				94EDE8D61E255E1A009D989C /* Duck.swift */,
+				94EDE8D71E255E1A009D989C /* Mouse.swift */,
 			);
 			name = protocol;
 			sourceTree = "<group>";
@@ -248,14 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A4BBB71E200ADB00BE1AA3 /* Duck.swift in Sources */,
 				94A4BB921E2002D600BE1AA3 /* AppDelegate.swift in Sources */,
 				94A4BBC51E22880E00BE1AA3 /* URLSessionDataTaskProtocol.swift in Sources */,
-				94A4BBB41E2009EF00BE1AA3 /* Mouse.swift in Sources */,
-				94A4BBAD1E20037300BE1AA3 /* SimpleHello.swift in Sources */,
+				94EDE8DC1E255E1A009D989C /* SimpleHello.swift in Sources */,
+				94EDE8DB1E255E1A009D989C /* Mouse.swift in Sources */,
+				94EDE8DA1E255E1A009D989C /* Duck.swift in Sources */,
 				94A4BBBE1E22695000BE1AA3 /* HttpAPIController.swift in Sources */,
 				94A4BBBC1E22682F00BE1AA3 /* URLSessionProtocol.swift in Sources */,
-				94A4BBB91E200C8300BE1AA3 /* Animal.swift in Sources */,
+				94EDE8D91E255E1A009D989C /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +461,7 @@
 				94A4BBA81E2002D600BE1AA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94A4BBA91E2002D600BE1AA3 /* Build configuration list for PBXNativeTarget "helloSwiftTDDTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +470,7 @@
 				94A4BBAB1E2002D600BE1AA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
