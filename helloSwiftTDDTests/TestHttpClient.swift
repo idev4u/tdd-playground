@@ -48,6 +48,9 @@ class TestHttpClient: XCTestCase {
 
         // how to us it
         var data: NSData?
+        // change this to 
+        // url
+        // request aysnc to be more clear
         client.get(url: url) { (receivedData, _) -> Void in
             data = receivedData
         }
