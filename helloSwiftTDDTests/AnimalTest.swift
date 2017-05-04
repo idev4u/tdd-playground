@@ -18,14 +18,9 @@ class AnimalTest: XCTestCase {
         let duckFeature = donald.feature()
         XCTAssertEqual(duckFeature, "quak")
         
-//        XCTAssertTrue(donald is Animal, "Expect that Donald is an Animal")
-        
         let micky: Animal = Mouse()
         let mouseFeature = micky.feature()
         XCTAssertEqual(mouseFeature, "piep")
-        
-//        XCTAssertTrue(micky is Animal, "Expect that Micky is an Animal")
-        
         
     }
 
