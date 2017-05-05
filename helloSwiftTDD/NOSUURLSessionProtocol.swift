@@ -19,8 +19,9 @@ protocol NOSUURLSessionProtocol {
 }
 
 extension URLSession: NOSUURLSessionProtocol {
+    // neccesssary to use the custom return type NOSUURLSessionDataTaskProtocol
     func dataTaskWithURL(url: NSURL, completionHandler : DataTaskResult) -> NOSUURLSessionDataTaskProtocol {
         return (dataTaskWithURL(url: url, completionHandler: completionHandler) as! URLSessionDataTask) as NOSUURLSessionDataTaskProtocol
     }
-
+    
 }

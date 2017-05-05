@@ -2,6 +2,9 @@
 
 ######### test Class
 
+import XCTest
+@testable import helloSwiftTDD
+
 class TestHttpClient: XCTestCase {
     
     var client: NOSUHttpClient!
@@ -81,10 +84,11 @@ protocol NOSUURLSessionProtocol {
 }
 
 extension URLSession: NOSUURLSessionProtocol {
+    // neccesssary to use the custom return type NOSUURLSessionDataTaskProtocol
     func dataTaskWithURL(url: NSURL, completionHandler : DataTaskResult) -> NOSUURLSessionDataTaskProtocol {
         return (dataTaskWithURL(url: url, completionHandler: completionHandler) as! URLSessionDataTask) as NOSUURLSessionDataTaskProtocol
     }
-
+    
 }
 
 ########## URLSessionDataTask

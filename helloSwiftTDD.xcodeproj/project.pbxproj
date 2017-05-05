@@ -72,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94742F9A1EBCB84B00900C1E /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				94A4BBBF1E226CF100BE1AA3 /* test_utils */,
+				94A4BBC21E227E8200BE1AA3 /* TestHttpClient.swift */,
+			);
+			name = HttpClient;
+			sourceTree = "<group>";
+		};
 		94A4BB851E2002D600BE1AA3 = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +116,10 @@
 		94A4BBA01E2002D600BE1AA3 /* helloSwiftTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				94A4BBBF1E226CF100BE1AA3 /* test_utils */,
+				94742F9A1EBCB84B00900C1E /* HttpClient */,
 				94A4BBA11E2002D600BE1AA3 /* helloSwiftTDDTests.swift */,
 				94A4BBAE1E20044400BE1AA3 /* AnimalTest.swift */,
 				94A4BBA31E2002D600BE1AA3 /* Info.plist */,
-				94A4BBC21E227E8200BE1AA3 /* TestHttpClient.swift */,
 			);
 			path = helloSwiftTDDTests;
 			sourceTree = "<group>";
