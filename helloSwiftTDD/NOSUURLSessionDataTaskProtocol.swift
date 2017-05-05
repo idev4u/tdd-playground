@@ -6,12 +6,16 @@
 //  Copyright © 2017 Norman Sutorius. All rights reserved.
 //
 
+// Extends the Foundation URLSessionDataTask
+
 import Foundation
 
-protocol URLSessionDataTaskProtocol {
+protocol NOSUURLSessionDataTaskProtocol {
     
     func resume()
 
 }
 
-extension URLSessionDataTask: URLSessionDataTaskProtocol { }
+extension URLSessionDataTask: NOSUURLSessionDataTaskProtocol {
+
+}

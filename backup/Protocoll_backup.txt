@@ -1,0 +1,144 @@
+############### Protocol Test
+
+######### test Class
+
+class TestHttpClient: XCTestCase {
+    
+    var client: NOSUHttpClient!
+    let session = FakeURLSession()
+    
+    // Run before the test
+    override func setUp() {
+        super.setUp()
+        // add the fake session
+        client = NOSUHttpClient(session: session)
+    }
+        
+    // Test Data
+    func test_GET_data() {
+        
+        //test setup
+        let url = NSURL(string: "https://console.ng.bluemix.net")!
+        let expectedData = "{event: 'cool keynote'}".data(using: String.Encoding.utf8) as NSData?
+        session.nextData = expectedData
+        session.nextResponse = HTTPURLResponse(url: url as URL, statusCode: 200, httpVersion: nil, headerFields: nil)
+        var data: NSData?
+        
+        // this is how the client should work
+        client.setupEndpoint(url: url)
+        data = client.get()
+        
+        // Accepatance and expectaion what the client provides
+        XCTAssert(session.lastURL === url, "the url should be exact the same like in the get func!")
+        XCTAssertNotNil(data, "Data should have to be not nil!")
+        XCTAssertEqual(data, expectedData, "Get should provide the fake data.")
+
+    }
+}
+
+
+########## test_utils/Fake URL Session
+
+import Foundation
+@testable import helloSwiftTDD
+
+class FakeURLSession: NOSUURLSessionProtocol {
+    var nextDataTask = FakeURLSessionDataTask()
+    var nextData: NSData?
+    var nextResponse: URLResponse?
+    var nextError: NSError?
+    
+    private (set) var lastURL: NSURL?
+    
+    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult) -> NOSUURLSessionDataTaskProtocol {
+        lastURL = url
+        completionHandler(nextData, nextResponse, nextError)
+        return nextDataTask
+    }
+      
+}
+
+class FakeURLSessionDataTask: NOSUURLSessionDataTaskProtocol {
+    private (set) var resumeWasCalled = false
+    
+    func resume() {
+        resumeWasCalled = true
+    }
+}
+
+############ URL Session
+
+// Extends the Foundation URLSession
+
+import Foundation
+
+// predifend completionHandler
+typealias DataTaskResult = (NSData?, URLResponse?, NSError?) ->Void
+
+protocol NOSUURLSessionProtocol {
+    
+    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult) -> NOSUURLSessionDataTaskProtocol
+}
+
+extension URLSession: NOSUURLSessionProtocol {
+    func dataTaskWithURL(url: NSURL, completionHandler : DataTaskResult) -> NOSUURLSessionDataTaskProtocol {
+        return (dataTaskWithURL(url: url, completionHandler: completionHandler) as! URLSessionDataTask) as NOSUURLSessionDataTaskProtocol
+    }
+
+}
+
+########## URLSessionDataTask
+
+// Extends the Foundation URLSessionDataTask
+
+import Foundation
+
+protocol NOSUURLSessionDataTaskProtocol {
+    
+    func resume()
+
+}
+
+extension URLSessionDataTask: NOSUURLSessionDataTaskProtocol {
+
+}
+
+############################################
+############################################
+######### HTTP Client
+
+
+import Foundation
+
+class NOSUHttpClient {
+    
+    private let session: NOSUURLSessionProtocol
+    private var url: NSURL? = nil
+    
+    init(session: NOSUURLSessionProtocol = URLSession.shared) {
+        self.session = session
+
+    }
+    
+    func setupEndpoint(url: NSURL) {
+        self.url = url
+    }
+    
+    func get() -> NSData {
+        var responseData = NSData()
+        let task = session.dataTaskWithURL(url: url!) { (data, response, error) -> Void in
+            if let _ = error {
+                print("\(String(describing: error))")
+            } else if let response = response as? HTTPURLResponse, 200...299 ~= response.statusCode {
+                // add the data from the complition hanlder 
+                responseData = data!
+            } else {
+                print("\(String(describing: error))")
+            }
+        }
+        task.resume()
+        
+        return responseData
+    }
+    
+}

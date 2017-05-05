@@ -12,11 +12,11 @@
 		94A4BB971E2002D600BE1AA3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A4BB951E2002D600BE1AA3 /* MainMenu.xib */; };
 		94A4BBA21E2002D600BE1AA3 /* helloSwiftTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBA11E2002D600BE1AA3 /* helloSwiftTDDTests.swift */; };
 		94A4BBB61E200ACF00BE1AA3 /* AnimalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBAE1E20044400BE1AA3 /* AnimalTest.swift */; };
-		94A4BBBC1E22682F00BE1AA3 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBBB1E22682F00BE1AA3 /* URLSessionProtocol.swift */; };
-		94A4BBBE1E22695000BE1AA3 /* HttpAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBBD1E22695000BE1AA3 /* HttpAPIController.swift */; };
+		94A4BBBC1E22682F00BE1AA3 /* NOSUURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBBB1E22682F00BE1AA3 /* NOSUURLSessionProtocol.swift */; };
+		94A4BBBE1E22695000BE1AA3 /* NOSUHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBBD1E22695000BE1AA3 /* NOSUHttpClient.swift */; };
 		94A4BBC11E226D2100BE1AA3 /* FakeURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBC01E226D2100BE1AA3 /* FakeURLSession.swift */; };
 		94A4BBC31E227E8200BE1AA3 /* TestHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBC21E227E8200BE1AA3 /* TestHttpClient.swift */; };
-		94A4BBC51E22880E00BE1AA3 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBC41E22880E00BE1AA3 /* URLSessionDataTaskProtocol.swift */; };
+		94A4BBC51E22880E00BE1AA3 /* NOSUURLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4BBC41E22880E00BE1AA3 /* NOSUURLSessionDataTaskProtocol.swift */; };
 		94EDE8D91E255E1A009D989C /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8D51E255E1A009D989C /* Animal.swift */; };
 		94EDE8DA1E255E1A009D989C /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8D61E255E1A009D989C /* Duck.swift */; };
 		94EDE8DB1E255E1A009D989C /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8D71E255E1A009D989C /* Mouse.swift */; };
@@ -43,11 +43,11 @@
 		94A4BBA11E2002D600BE1AA3 /* helloSwiftTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloSwiftTDDTests.swift; sourceTree = "<group>"; };
 		94A4BBA31E2002D600BE1AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94A4BBAE1E20044400BE1AA3 /* AnimalTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalTest.swift; sourceTree = "<group>"; };
-		94A4BBBB1E22682F00BE1AA3 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
-		94A4BBBD1E22695000BE1AA3 /* HttpAPIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpAPIController.swift; sourceTree = "<group>"; };
+		94A4BBBB1E22682F00BE1AA3 /* NOSUURLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NOSUURLSessionProtocol.swift; sourceTree = "<group>"; };
+		94A4BBBD1E22695000BE1AA3 /* NOSUHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NOSUHttpClient.swift; sourceTree = "<group>"; };
 		94A4BBC01E226D2100BE1AA3 /* FakeURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeURLSession.swift; sourceTree = "<group>"; };
 		94A4BBC21E227E8200BE1AA3 /* TestHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHttpClient.swift; sourceTree = "<group>"; };
-		94A4BBC41E22880E00BE1AA3 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		94A4BBC41E22880E00BE1AA3 /* NOSUURLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NOSUURLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		94EDE8D51E255E1A009D989C /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animal.swift; path = ../backup/Animal.swift; sourceTree = "<group>"; };
 		94EDE8D61E255E1A009D989C /* Duck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Duck.swift; path = ../backup/Duck.swift; sourceTree = "<group>"; };
 		94EDE8D71E255E1A009D989C /* Mouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mouse.swift; path = ../backup/Mouse.swift; sourceTree = "<group>"; };
@@ -129,9 +129,9 @@
 		94A4BBBA1E22680000BE1AA3 /* netwok_facade */ = {
 			isa = PBXGroup;
 			children = (
-				94A4BBC41E22880E00BE1AA3 /* URLSessionDataTaskProtocol.swift */,
-				94A4BBBB1E22682F00BE1AA3 /* URLSessionProtocol.swift */,
-				94A4BBBD1E22695000BE1AA3 /* HttpAPIController.swift */,
+				94A4BBC41E22880E00BE1AA3 /* NOSUURLSessionDataTaskProtocol.swift */,
+				94A4BBBB1E22682F00BE1AA3 /* NOSUURLSessionProtocol.swift */,
+				94A4BBBD1E22695000BE1AA3 /* NOSUHttpClient.swift */,
 			);
 			name = netwok_facade;
 			sourceTree = "<group>";
@@ -249,12 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A4BB921E2002D600BE1AA3 /* AppDelegate.swift in Sources */,
-				94A4BBC51E22880E00BE1AA3 /* URLSessionDataTaskProtocol.swift in Sources */,
+				94A4BBC51E22880E00BE1AA3 /* NOSUURLSessionDataTaskProtocol.swift in Sources */,
 				94EDE8DC1E255E1A009D989C /* SimpleHello.swift in Sources */,
 				94EDE8DB1E255E1A009D989C /* Mouse.swift in Sources */,
 				94EDE8DA1E255E1A009D989C /* Duck.swift in Sources */,
-				94A4BBBE1E22695000BE1AA3 /* HttpAPIController.swift in Sources */,
-				94A4BBBC1E22682F00BE1AA3 /* URLSessionProtocol.swift in Sources */,
+				94A4BBBE1E22695000BE1AA3 /* NOSUHttpClient.swift in Sources */,
+				94A4BBBC1E22682F00BE1AA3 /* NOSUURLSessionProtocol.swift in Sources */,
 				94EDE8D91E255E1A009D989C /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

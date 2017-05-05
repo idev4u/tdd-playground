@@ -9,7 +9,7 @@
 import Foundation
 @testable import helloSwiftTDD
 
-class FakeURLSession: URLSessionProtocol {
+class FakeURLSession: NOSUURLSessionProtocol {
     var nextDataTask = FakeURLSessionDataTask()
     var nextData: NSData?
     var nextResponse: URLResponse?
@@ -17,7 +17,7 @@ class FakeURLSession: URLSessionProtocol {
     
     private (set) var lastURL: NSURL?
     
-    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult) ->URLSessionDataTaskProtocol {
+    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult) -> NOSUURLSessionDataTaskProtocol {
         lastURL = url
         completionHandler(nextData, nextResponse, nextError)
         return nextDataTask
@@ -25,7 +25,7 @@ class FakeURLSession: URLSessionProtocol {
       
 }
 
-class FakeURLSessionDataTask: URLSessionDataTaskProtocol {
+class FakeURLSessionDataTask: NOSUURLSessionDataTaskProtocol {
     private (set) var resumeWasCalled = false
     
     func resume() {
