@@ -20,7 +20,7 @@ class TestHttpClient: XCTestCase {
         // add the fake session
         client = NOSUHttpClient(session: session)
     }
-        
+    
     // Test Data
     func test_GET_data() {
         
@@ -36,9 +36,9 @@ class TestHttpClient: XCTestCase {
         data = client.get()
         
         // Accepatance and expectaion what the client provides
-        XCTAssert(session.lastURL === url, "the url should be exact the same like in the get func!")
+        XCTAssert(session.lastURL === url, "the url should be xact the same like in the get func!")
         XCTAssertNotNil(data, "Data should have to be not nil!")
         XCTAssertEqual(data, expectedData, "Get should provide the fake data.")
-
+        
     }
 }

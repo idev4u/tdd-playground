@@ -22,7 +22,7 @@ class FakeURLSession: NOSUURLSessionProtocol {
         completionHandler(nextData, nextResponse, nextError)
         return nextDataTask
     }
-      
+    
 }
 
 class FakeURLSessionDataTask: NOSUURLSessionDataTaskProtocol {

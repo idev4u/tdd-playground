@@ -15,7 +15,7 @@ class NOSUHttpClient {
     
     init(session: NOSUURLSessionProtocol = URLSession.shared) {
         self.session = session
-
+        
     }
     
     func setupEndpoint(url: NSURL) {
@@ -28,7 +28,7 @@ class NOSUHttpClient {
             if let _ = error {
                 print("\(String(describing: error))")
             } else if let response = response as? HTTPURLResponse, 200...299 ~= response.statusCode {
-                // add the data from the complition hanlder 
+                // add the data from the complition hanlder
                 responseData = data!
             } else {
                 print("\(String(describing: error))")
@@ -39,4 +39,5 @@ class NOSUHttpClient {
         return responseData
     }
     
+
 }

@@ -13,9 +13,9 @@ import Foundation
 protocol NOSUURLSessionDataTaskProtocol {
     
     func resume()
-
+    
 }
 
 extension URLSessionDataTask: NOSUURLSessionDataTaskProtocol {
-
+    
 }
